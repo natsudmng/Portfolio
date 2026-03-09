@@ -32,17 +32,37 @@ nav a{
 }
 
 section{
-    padding:40px;
-    max-width:900px;
+    padding:30px 20px;
+    max-width:1000px;
     margin:auto;
 }
 
+/* PROJECT GRID */
+.projects-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));
+    gap:20px;
+}
+
+/* PROJECT CARD */
 .card{
     background:white;
     padding:20px;
-    margin:15px 0;
     border-radius:8px;
     box-shadow:0 2px 5px rgba(0,0,0,0.1);
+    transition:transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+    box-shadow:0 8px 20px rgba(0,0,0,0.15);
+}
+
+.card img{
+    width:60%;
+    display:block;
+    margin:15px auto;
+    border-radius:8px;
 }
 
 footer{
@@ -83,17 +103,25 @@ learning and improving my abilities to prepare for future opportunities in the d
 <div class="card">
 <h3>Interactive Website using XAMPP server</h3>
 
-<img src="https://constanze.s-ul.eu/Z9Aszf6Z" alt="xampp web">
+<img src="https://constanze.s-ul.eu/Z9Aszf6Z" alt="xamppweb">
 
 <p>Developed an interactive website using XAMPP as the local server environment. The project focuses on creating dynamic web pages and understanding how web applications run on a local development server, including testing and managing website functionality.</p>
 </div>
 
 <div class="card">
-<h3>Interactive Website using XAMPP server</h3>
+<h3>Reminder app design using Figma</h3>
 
-<img src="https://constanze.s-ul.eu/LEZjpJAc" alt="figma reminder">
+<img src="https://constanze.s-ul.eu/LEZjpJAc" alt="figmareminder">
 
 <p>Designed a reminder mobile application prototype using Figma. The project involved creating user interface layouts, planning user experience flow, and developing an intuitive design to help users manage tasks and reminders efficiently.</p>
+</div>
+
+<div class="card">
+<h3>3D strategy game using Unity</h3>
+
+<img src="https://constanze.s-ul.eu/J36z8Z49" alt="3dunity">
+
+<p>Developed a basic 3D strategy game using Unity. The project focused on game mechanics, environment design, and interactive gameplay elements while learning the fundamentals of game development and 3D game engines.</p>
 </div>
 
 </section>
@@ -111,6 +139,8 @@ learning and improving my abilities to prepare for future opportunities in the d
 <section id="contact">
 <h2>Contact</h2>
 <p>Email: natsudmng@email.com</p>
+<p>GitHub: <a href="#">https://github.com/natsudmng</a><br></p>
+
 </section>
 
 <footer>
@@ -120,4 +150,5 @@ learning and improving my abilities to prepare for future opportunities in the d
 </body>
 
 </html>
+
 
