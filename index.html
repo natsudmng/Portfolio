@@ -205,6 +205,22 @@ margin: 0;
 padding-left: 20px;
 }
 
+.certificate{
+background:white;
+padding:18px;
+margin-top:15px;
+border-radius:10px;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+cursor:pointer;
+transition:0.2s;
+max-width:400px;
+}
+
+.certificate:hover{
+transform:translateY(-5px);
+box-shadow:0 8px 20px rgba(0,0,0,0.2);
+}
+
 </style>
 </head>
 
@@ -435,13 +451,30 @@ summaries and quiz questions based on the content.</p>
 
 <h2>Certificates</h2>
 
-<p>Certificates and professional training achievements will be displayed here.</p>
+<p>Click a certificate to view it.</p>
 
-<div class="certificate">
-<p><strong>HUAWEI CLOUD Developer Certification(2024)</strong></p>
+<div class="certificate" onclick="openModal('certHuawei')">
+<p><strong>HUAWEI CLOUD Developer Certification (2024)</strong></p>
 </div>
 
 </section>
+
+
+<!-- CERTIFICATE POPUP -->
+
+<div id="certHuawei" class="modal">
+
+<div class="modal-content">
+
+<span class="close" onclick="closeModal('certHuawei')">&times;</span>
+
+<h3>HUAWEI CLOUD Developer Certification (2024)</h3>
+
+<img src="https://constanze.s-ul.eu/PuCKKEA3">
+
+</div>
+
+</div>
 
 <section id="contact">
 
